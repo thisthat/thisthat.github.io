@@ -6,14 +6,20 @@ Array.prototype.remove = function(from, to) {
 	return this.push.apply(this, rest);
 };
 
-// render paper home
+// render paper
 $.getJSON( "data/papers.json", function( data ) {
 	var sorted = { papers: data.papers.sort(function(a, b) {
 	    return b.date - a.date;
 	}) };
+	//home
 	$.get('template/papers_home.html', function(template) {
 		var rendered = Mustache.render(template, sorted);
 		$('#papers').html(rendered);
+	});
+	// publications
+	$.get('template/paper_card.html', function(template) {
+		var rendered = Mustache.render(template, sorted);
+		$('#paper_cards').html(rendered);
 	});
 });
 

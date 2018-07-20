@@ -1,30 +1,36 @@
 {
 	"papers" : [
 		{
+			"id" : 1,
 			"title" : "Extracting Parallel Control Flow Graphs with Synchronization Information from Java Program",
 			"abs"   : "abs",
 			"authors" : "G. Liva, F. Spegni, L. Spalazzi, A. Bollin, M. Pinzger",
 			"url"  : "./papers/AAU-SERG-2017-001.pdf",
 			"tool" : "",
 			"venue": "",
+			"img"  : "",
 			"date" : "1451606400"
 		},
 		{
+			"id" : 2,
 			"title" : "Extracting Timed Automata from Java Methods",
 			"abs"   : "abs1",
 			"authors" : "G. Liva, M. T. Khan, M. Pinzger",
 			"url"  : "./papers/Extracting_Timed_Automata_from_Java_Methods.pdf",
 			"tool" : "https://github.com/rtse-project/extracting-timed-automata",
 			"venue": "",
+			"img"  : "",
 			"date" : "1501545600"
 		},
 		{
+			"id" : 3,
 			"title" : "Modeling Time in Java Programs for Automatic Error Detection",
 			"abs"   : "abs2",
 			"authors" : "G. Liva, M. T. Khan, F. Spegni, L. Spalazzi, A. Bollin, M. Pinzger",
 			"url"  : "./papers/Modeling_Time_in_Java_Programs_for_Automatic_Error_Detection.pdf",
 			"tool" : "https://github.com/rtse-project/automatic-error-detection",
 			"venue": "",
+			"img"  : "transparent.jpg",
 			"date" : "1535760000"
 		}
 	]

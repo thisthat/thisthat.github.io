@@ -90,6 +90,10 @@ a.no-link:active {
     margin-top: -20px;
 }
 
+.bottom-space {
+	margin-bottom: 30px;
+}
+
 .mdl-grid {
 	padding-bottom: 0px;
 	padding-top: 0px;
