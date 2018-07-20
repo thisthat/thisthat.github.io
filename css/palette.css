@@ -52,6 +52,7 @@
 
 .pdf-icon {
 	margin-bottom: 15px;
+	margin-left: 20px;
 }
 
 .chip-icon{
@@ -83,4 +84,9 @@ a.no-link:active {
 
 .icons {
     margin-top: -20px;
+}
+
+.mdl-grid {
+	padding-bottom: 0px;
+	padding-top: 0px;
 }

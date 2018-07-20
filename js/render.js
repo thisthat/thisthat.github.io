@@ -36,9 +36,3 @@ $.getJSON( "data/research.json", function( data ) {
 
 
 });
-
-
-function sortByDate(arr){
-	arr
-	return arr;
-}
