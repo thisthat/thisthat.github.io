@@ -1,3 +1,8 @@
 {
-	"text" : "research"
+	"text" : "My research interests are in:",
+	"topics" : [
+		{"topic" : "Model Checking and Static Analysis"},
+		{"topic" : "Program Analysis"},
+		{"topic" : "Software Evolution"}
+	]
 }
