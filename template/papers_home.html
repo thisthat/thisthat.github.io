@@ -1,11 +1,26 @@
 <div>
 	{{#papers}}
 	<div class="single paper">
-		<i class="material-icons">description</i>
-		<span> {{title}} </span>
-		pdf, src
-		<br/>
-		<span> {{authors}} </span>
+
+		<p class="text-align-icon"> <i class="material-icons">label</i> <span class="title">{{title}}</span> </p>
+
+		<a target="_blank" href="{{url}}" class="no-link">
+			<span class="mdl-chip mdl-chip--contact text-align-icon pdf-icon">
+				<img class="mdl-chip__contact" src="img/pdf.png"></img>
+				<span class="mdl-chip__text">PDF</span>
+			</span>
+		</a>
+		{{#tool}}
+		<a target="_blank" href="{{tool}}" class="no-link">
+			<span class="mdl-chip mdl-chip--contact text-align-icon pdf-icon">
+				<i class="material-icons mdl-chip__contact chip-icon no-link">code</i>
+				<span class="mdl-chip__text no-link">Tool</span>
+			</span>
+		</a>
+		{{/tool}}
+		<br />
+		<span class="authors"> {{authors}} </span>
+		<br /><br />
 	</div>
 	{{/papers}}
 </div>
