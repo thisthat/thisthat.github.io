@@ -1,0 +1,22 @@
+{
+	"papers" : [
+		{
+			"title" : "tt",
+			"abs"   : "abs",
+			"authors" : "a1, a2",
+			"else"  : "extra"
+		},
+		{
+			"title" : "tt1",
+			"abs"   : "abs1",
+			"authors" : "a1, a2",
+			"else"  : "extra1"
+		},
+		{
+			"title" : "tt2",
+			"abs"   : "abs2",
+			"authors" : "a1, a2",
+			"else"  : "extra2"
+		}
+	]
+}
