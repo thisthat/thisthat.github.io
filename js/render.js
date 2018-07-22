@@ -20,6 +20,9 @@ $.getJSON( "data/papers.json", function( data ) {
 	$.get('template/paper_card.html', function(template) {
 		var rendered = Mustache.render(template, sorted);
 		$('#paper_cards').html(rendered);
+		$('p.abstract').each(function (){
+			$(this).html($(this).html().substring(0, 400) + "...");
+		});
 	});
 });
 

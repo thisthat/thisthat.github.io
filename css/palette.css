@@ -1,5 +1,5 @@
 #container {
-	min-height: calc(100% - 64px);
+	/*min-height: calc(100% - 64px);*/
 }
 
 .first-color {
@@ -95,6 +95,12 @@ a.no-link:active {
 }
 
 .mdl-grid {
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.citation {
+	display: block;
 	padding-bottom: 0px;
 	padding-top: 0px;
 }
