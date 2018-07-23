@@ -46,11 +46,11 @@
 <div class="row">
 	<div id="gridid" class="col-sm-12">
 		<h1 id="publications">Extracting Timed Automata from Java Methods</h1>
-		<p>abs1</p>
+		<p>The verification of the time behavior in distributed, multi-threaded programs is challenging, mainly because modern programming languages only provide means to represent time without a proper semantics. Current approaches to extract time models from source code represent time only as a sequence of events or require developers to manually provide a formal model of the time behavior. This makes it difficult for developers to verify various aspects of their systems, such as timeouts, delays and periodicity of the execution. In this paper, we introduce a definition of the time semantics of the Java programming language. Based on the semantics, we present an approach to automatically extract timed automata and their time constraints from the Java methods source code. First, we detect Java statements which involve time, from which we then extract the timed automata that are directly amenable to the verification of time properties of the methods. We evaluated the accuracy of our approach on ten open source Java projects that heavily use time in their source code. The results show a precision of 98.62% and recall of 95.37% in extracting time constraints from Java code. Finally, we demonstrate the effectiveness of our approach with five reported bugs of four different Apache systems that we could confirm.</p>
 
 		<figure class="figure">
-			<img src="../img/" class="figure-img img-fluid rounded" alt="{{FIG_CAPTION}}">
-			<figcaption class="figure-caption"></figcaption>
+			<img src="../img/timedautomata.png" class="figure-img img-fluid rounded" alt="{{FIG_CAPTION}}">
+			<figcaption class="figure-caption">The graph on the left depicts the timed automaton extracted from the source code presented in Listing 1. State names represent the source code line numbers. The graph on the right depicts the same automaton with concrete values inferred from executing the program.</figcaption>
 		</figure>
 		
 		<a target="_blank" href="./papers/Extracting_Timed_Automata_from_Java_Methods.pdf" class="no-link">
@@ -73,12 +73,12 @@
 		<div class="card">
 			<div class="card-body">
 			<p class="citation">
-@inproceedings{, <br>
+@inproceedings{liva2017extracting, <br>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Author = {G. Liva, M. T. Khan, M. Pinzger}, <br>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Title = {Extracting Timed Automata from Java Methods}, <br>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Year = {year}, <br>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Booktitle = {}, <br>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Pages = {} <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Year = {2017}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Booktitle = {Proceedings of the IEEE 17th International Working Conference on Source Code Analysis and Manipulation (SCAM)}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Pages = {91--100} <br>
 }
 </p>
 			</div>

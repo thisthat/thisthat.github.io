@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Giovanni Liva Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Modeling Time in Java Programs for Automatic Error Detection</title>
+    <title>Automatic verification of time behavior of programs</title>
 
 	<!-- Page styles -->
     <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
@@ -45,15 +45,15 @@
 <!-- Content here -->
 <div class="row">
 	<div id="gridid" class="col-sm-12">
-		<h1 id="publications">Modeling Time in Java Programs for Automatic Error Detection</h1>
-		<p>Modern programming languages, such as Java, represent time as integer variables, called timestamps. Timestamps allow developers to tacitly model incorrect time values resulting in a program failure because any negative value or every positive value is not necessarily a valid time representation. Current approaches to automatically detect errors in programs, such as Randoop and FindBugs, cannot detect such errors because they treat timestamps as normal integer variables and test them with random values verifying if the program throws an exception. In this paper, we present an approach that considers the time semantics of the Java language to systematically detect time related errors in Java programs. With the formal time semantics, our approach determines which integer variables handle time and which statements use or alter their values. Based on this information, it translates these statements into an SMT model that is passed to an SMT solver. The solver formally verifies the correctness of the model and reports the violations of time properties in that program. For the evaluation, we have implemented our approach in a prototype tool and applied it to the source code of 20 Java open source projects. The results show that our approach is scalable and it is capable of detecting time errors precisely enough allowing its usability in real-world applications.</p>
+		<h1 id="publications">Automatic verification of time behavior of programs</h1>
+		<p>Automatic verification of software could save companies from huge losses due to errors in their programs. Existing techniques to prevent and detect errors are mainly based on imprecise heuristics which can report false positives. Formal verification techniques are an alternative to the heuristic approaches. They are more precise and can report errors with higher rigor. However, they cannot be directly applied because current programming languages have no defined semantics that specifies how the source code is interpreted in the execution of programs. Moreover, no existing work tries to develop a semantics for the time domain. The target of this thesis is to provide a verification framework based on a defined time semantics that can help developers to automatically detect time related errors in the behavior of programs. We define a time semantics that allows us to ascribe a meaning to source code statements that alter and use time. Based on the time semantics, we develop an approach to (i) automatically assert time properties and (ii) reverse engineer timed automata, a formal model of the time behavior that is amenable for verification. We plan to evaluate our approaches with quantitative and qualitative studies. The quantitative studies will measure the performance of our approaches in open source projects and the qualitative studies will collect the developers' feedback about the applicability and usefulness of our proposed techniques.</p>
 
 		<figure class="figure">
-			<img src="../img/approach.png" class="figure-img img-fluid rounded" alt="{{FIG_CAPTION}}">
-			<figcaption class="figure-caption">Overview of our approach for detecting time property violations. Time Slice slices the program keeping only the statements that alter and use time variables. Path Generation generates multiple execution paths of the slice based on its control flow. SMT Translation translates each path into SMT constraints. Each model of SMT constraints is fed into an SMT solver to check for violations of time properties in the source code.</figcaption>
+			<img src="../img/schedule.png" class="figure-img img-fluid rounded" alt="{{FIG_CAPTION}}">
+			<figcaption class="figure-caption">Schedule of the work for the PhD proposal</figcaption>
 		</figure>
 		
-		<a target="_blank" href="./papers/Modeling_Time_in_Java_Programs_for_Automatic_Error_Detection.pdf" class="no-link">
+		<a target="_blank" href="./papers/expose.pdf" class="no-link">
 			<span class="mdl-chip mdl-chip--contact text-align-icon pdf-icon">
 				<img class="mdl-chip__contact" src="../img/pdf.png"></img>
 				<span class="mdl-chip__text">PDF</span>
@@ -61,24 +61,17 @@
 		</a>
 		
 		
-		<a target="_blank" href="https://github.com/rtse-project/automatic-error-detection" class="no-link">
-			<span class="mdl-chip mdl-chip--contact text-align-icon pdf-icon">
-				<i class="material-icons mdl-chip__contact chip-icon no-link">code</i>
-				<span class="mdl-chip__text no-link">Tool</span>
-			</span>
-		</a>
-		
 
 
 		<div class="card">
 			<div class="card-body">
 			<p class="citation">
-@inproceedings{liva2018modelling, <br>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Author = {G. Liva, M. T. Khan, F. Spegni, L. Spalazzi, A. Bollin, M. Pinzger}, <br>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Title = {Modeling Time in Java Programs for Automatic Error Detection}, <br>
+@inproceedings{liva2018automatic, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Author = {G. Liva}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Title = {Automatic verification of time behavior of programs}, <br>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Year = {2018}, <br>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Booktitle = {Proceedings of the 6th Conference on Formal Methods in Software Engineering (FormaliSE)}, <br>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Pages = {50--59} <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Booktitle = {Proceedings of the 40th International Conference on Software Engineering: Companion Proceeedings (ICSE)}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Pages = {468--471} <br>
 }
 </p>
 			</div>
