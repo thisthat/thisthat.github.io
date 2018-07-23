@@ -104,6 +104,16 @@ a.no-link:active {
 	padding-top: 0px;
 }
 
+
+.news {
+	font-size: 20px;
+}
+@media only screen and (max-width: 978px) {
+    .news-tab {
+		display: none;
+	}
+}
+
 .demo-card-event.mdl-card {
   width: 256px;
   height: auto;
