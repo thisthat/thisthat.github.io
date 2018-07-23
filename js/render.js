@@ -33,6 +33,8 @@ $.getJSON( "data/bio.json", function( data ) {
 		var rendered = Mustache.render(template, data);
 		$('#bio').html(rendered);
 	});
+	$(".news").html(data["news"]);
+	$(".sub-news").html(data["sub-news"]);
 });
 
 // render research

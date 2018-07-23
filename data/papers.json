@@ -65,7 +65,7 @@
 			"title" : "Towards Model Checking Security of Real Time Java Software",
 			"abs"   : "More and more software libraries and applications in high-performance computing and distributed systems are coded using the Java programming language. The correctness of such pieces of code w.r.t. a given set of security policies often depends on the correct handling of timing between concurrent or recurrent events. Model-checking has proven to be an effective tool for verifying correctness of software. In spite of the growing importance of this application area of formal methods, though, no one targets the problem of verifying the correctness of real-time software w.r.t. timed specifications. The few existing works focus on very different problems, such as schedulability analysis of Java tasks. We describe an approach combining rule-based static analysis together with symbolic execution of Java code to extract networks of timed automata from existing software and then use Uppaal to model-check it against timed specifications. We claim that this approach can be helpful in model-checking security policies of real time java software.",
 			"authors" : "F. Spegni, L. Spalazzi, L. Giovanni, M. Pinzger",
-			"url"  : "./papers/expose.pdf",
+			"url"  : "./papers/SHPCS_2018_paper_5.pdf",
 			"tool" : "https://git-isys.aau.at/giliva/java-time-verification/tree/term_rewriting",
 			"year" : "2018",
 			"venue": "Proceedings of the 13th International Workshop on Security and High Performance Computing Systems (SHPCS 2018)",
