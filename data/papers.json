@@ -74,6 +74,21 @@
 			"pages": "to-appear",
 			"ENTRY_ID" : "spegni2018towards",
 			"date" : "1536660000"
+		},
+		{
+			"id" : 6,
+			"title" : "Semantics-driven extraction of timed automata from Java programs",
+			"abs"   : "The automatic verification of time properties of models extracted from programs is challenging, mainly because modern programming languages, such as Java, represent time without a proper semantics. Current approaches to extract time models from source code either represent time only as a tree-like sequence of events or require developers to manually provide a formal model of the time behavior. This makes it difficult for software developers to verify various aspects of their systems, such as timeouts, delays and periodicity of the execution. In this paper, we introduce a formal definition of the time semantics for the Java programming language. Based on the semantics, we present an approach to automatically extract timed automata and their time constraints from Java programs at method level. First, our approach detects the Java statements that involve time, from which it then extracts the timed automata. Our extracted automata are directly amenable to the verification of time properties of the corresponding Java methods. We evaluated the accuracy of our approach on twenty open source Java projects that implement time behavior in their source code. The results show that our approach achieves 100% precision and recall in identifying time related information. They also show that 95% of the timed automata extracted from source code correctly model the time behavior of the method. Finally, we show the applicability of our timed automata to identify eight real errors in four open source Apache systems.",
+			"authors" : "L. Giovanni, K. Muhammad Taimoor, M. Pinzger",
+			"url"  : "./papers/emse_preprint.pdf",
+			"tool" : "https://git-isys.aau.at/giliva/java-time-verification/",
+			"year" : "2019",
+			"venue": "Empirical Software Engineering Journal",
+			"img"  : "approachEMSE.png",
+			"img_caption" : "Overview of our approach to extract a timed automaton of a Java method.",
+			"pages": "1--37",
+			"ENTRY_ID" : "liva2019semantics",
+			"date" : "1536670000"
 		}
 	]
 }

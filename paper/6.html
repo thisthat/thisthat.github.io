@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Giovanni Liva Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Semantics-driven extraction of timed automata from Java programs</title>
+
+	<!-- Page styles -->
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/material.min.css">
+	<link rel="stylesheet" href="../css/material.blue_grey-pink.min.css">
+	<link rel="stylesheet" href="../css/palette.css"
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header first-color-bg">
+  <header class="mdl-layout__header no-shadow">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><a href="../index.html" class="no-link white">Giovanni Liva</a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="../publications.html">Publications</a>
+        <a class="mdl-navigation__link" href="../tools.html">Tools</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title"><a href="../index.html" class="no-link">Giovanni Liva</a></span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="../publications.html">Publications</a>
+      <a class="mdl-navigation__link" href="../tools.html">Tools</a>
+    </nav>
+  </div>
+<main id="container" class="rounded-top-90 white-bg">
+<div class="container">
+<!-- Content here -->
+<div class="row">
+	<div id="gridid" class="col-sm-12">
+		<h1 id="publications">Semantics-driven extraction of timed automata from Java programs</h1>
+		<p>The automatic verification of time properties of models extracted from programs is challenging, mainly because modern programming languages, such as Java, represent time without a proper semantics. Current approaches to extract time models from source code either represent time only as a tree-like sequence of events or require developers to manually provide a formal model of the time behavior. This makes it difficult for software developers to verify various aspects of their systems, such as timeouts, delays and periodicity of the execution. In this paper, we introduce a formal definition of the time semantics for the Java programming language. Based on the semantics, we present an approach to automatically extract timed automata and their time constraints from Java programs at method level. First, our approach detects the Java statements that involve time, from which it then extracts the timed automata. Our extracted automata are directly amenable to the verification of time properties of the corresponding Java methods. We evaluated the accuracy of our approach on twenty open source Java projects that implement time behavior in their source code. The results show that our approach achieves 100% precision and recall in identifying time related information. They also show that 95% of the timed automata extracted from source code correctly model the time behavior of the method. Finally, we show the applicability of our timed automata to identify eight real errors in four open source Apache systems.</p>
+
+		<figure class="figure">
+			<img src="../img/approachEMSE.png" class="figure-img img-fluid rounded" alt="{{FIG_CAPTION}}">
+			<figcaption class="figure-caption">Overview of our approach to extract a timed automaton of a Java method.</figcaption>
+		</figure>
+		
+		<a target="_blank" href="../papers/emse_preprint.pdf" class="no-link">
+			<span class="mdl-chip mdl-chip--contact text-align-icon pdf-icon">
+				<img class="mdl-chip__contact" src="../img/pdf.png"></img>
+				<span class="mdl-chip__text">PDF</span>
+			</span>
+		</a>
+		
+		
+		<a target="_blank" href="https://git-isys.aau.at/giliva/java-time-verification/" class="no-link">
+			<span class="mdl-chip mdl-chip--contact text-align-icon pdf-icon">
+				<i class="material-icons mdl-chip__contact chip-icon no-link">code</i>
+				<span class="mdl-chip__text no-link">Tool</span>
+			</span>
+		</a>
+		
+
+
+		<div class="card">
+			<div class="card-body">
+			<p class="citation">
+@inproceedings{spegni2018towards, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Author = {L. Giovanni, K. Muhammad Taimoor, M. Pinzger}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Title = {Semantics-driven extraction of timed automata from Java programs}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Year = {2019}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Booktitle = {Empirical Software Engineering Journal}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Pages = {1--37} <br>
+}
+</p>
+			</div>
+		</div>
+	</div>
+</div>
+</br />
+</main>
+</div>
+
+<!-- Scripts -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/material.min.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/mustache.min.js"></script>
+<!--<script src="../js/render.js"></script>-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122647922-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122647922-1');
+</script>
+</body>
+</html>

@@ -494,6 +494,8 @@ mark,
 
 .figure {
   display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 .figure-img {
