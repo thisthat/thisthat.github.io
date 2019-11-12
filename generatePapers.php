@@ -29,7 +29,7 @@ function create_paper_html($data){
 			$first = substr($out, 0, $posInit);
 			$second = substr($out, $posEnd);
 			$out = $first . $second;
-		}
+		} 
 		$out = str_replace("{{#" . $match . "}}","", $out);
 		$out = str_replace("{{/" . $match . "}}","", $out);
 	}

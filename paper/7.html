@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Giovanni Liva Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Automatic Repair of Timestamp Comparisons</title>
+
+	<!-- Page styles -->
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/material.min.css">
+	<link rel="stylesheet" href="../css/material.blue_grey-pink.min.css">
+	<link rel="stylesheet" href="../css/palette.css"
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header first-color-bg">
+  <header class="mdl-layout__header no-shadow">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><a href="../index.html" class="no-link white">Giovanni Liva</a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="../publications.html">Publications</a>
+        <a class="mdl-navigation__link" href="../tools.html">Tools</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title"><a href="../index.html" class="no-link">Giovanni Liva</a></span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="../publications.html">Publications</a>
+      <a class="mdl-navigation__link" href="../tools.html">Tools</a>
+    </nav>
+  </div>
+<main id="container" class="rounded-top-90 white-bg">
+<div class="container">
+<!-- Content here -->
+<div class="row">
+	<div id="gridid" class="col-sm-12">
+		<h1 id="publications">Automatic Repair of Timestamp Comparisons</h1>
+		<p>Automated program repair has the potential to reduce the developers’ effort to ﬁx errors in their code. In particular, modern programming languages, such as Java, C, and C#, represent time as integer variables that suffer from integer overﬂow, introducing subtle errors that are hard to discover and repair. Recent researches on automated program repair rely on test cases to discover failures to correct, making them suitable only for regression errors. We propose a new strategy to automatically repair programs that suffer from timestamp overﬂows that are manifested in comparison expressions. It uniﬁes the beneﬁts of static analysis and automatic program repair avoiding dependency on testing to identify and correct defected code. Our approach performs an abstract analysis over the time domain of a program using a Time Type System to identify the problematic comparison expressions. The repairing strategy rewrites the timestamp comparisons exploiting the binary representation of machine numbers to correct the code. We have validated the applicability of our approach with 20 open source Java projects. The results show that it is able to correctly repair all 246 identiﬁed errors. To further validate the reliability of our approach, we have proved the soundness of both, type system and repairing strategy. Furthermore, several patches for three open source projects have been acknowledged and accepted by their developers.</p>
+
+		<figure class="figure">
+			<img src="../img/approachTSE.png" class="figure-img img-fluid rounded" alt="{{FIG_CAPTION}}">
+			<figcaption class="figure-caption">Overview of our approach to repair timestamp comparisons.</figcaption>
+		</figure>
+		
+		<a target="_blank" href="../papers/TSE.pdf" class="no-link">
+			<span class="mdl-chip mdl-chip--contact text-align-icon pdf-icon">
+				<img class="mdl-chip__contact" src="../img/pdf.png"></img>
+				<span class="mdl-chip__text">PDF</span>
+			</span>
+		</a>
+		
+		
+		<a target="_blank" href="https://github.com/rtse-project/automatic-repair-time-comparison/" class="no-link">
+			<span class="mdl-chip mdl-chip--contact text-align-icon pdf-icon">
+				<i class="material-icons mdl-chip__contact chip-icon no-link">code</i>
+				<span class="mdl-chip__text no-link">Tool</span>
+			</span>
+		</a>
+		
+
+
+		<div class="card">
+			<div class="card-body">
+			<p class="citation">
+@inproceedings{liva2019automatic, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Author = {L. Giovanni, K. Muhammad Taimoor, M. Pinzger, F. Spegni, L. Spalazzi}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Title = {Automatic Repair of Timestamp Comparisons}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Year = {2019}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Booktitle = {IEEE Transactions on Software Engineering}, <br>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Pages = {1--13} <br>
+}
+</p>
+			</div>
+		</div>
+	</div>
+</div>
+</br />
+</main>
+</div>
+
+<!-- Scripts -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/material.min.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/mustache.min.js"></script>
+<!--<script src="../js/render.js"></script>-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122647922-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122647922-1');
+</script>
+</body>
+</html>

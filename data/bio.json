@@ -1,5 +1,5 @@
 {
 	"bio": "I have studied Computer Science at the Universita' degli Studi di Udine receiving my B.Sc. in 2013. In 2015, I have got my M.Sc. degree with 110/110 cum laude in the joint program between the Universita' degli Studi di Udine and the Alpen-Adria-Universität Klagenfurt. Currently, I am a PhD student in the <a href=\"#\">Software Engineering Research Group</a> for the Alpen-Adria-Universität Klagenfurt supervised by <a href=\"https://pinzger.github.io/\">Prof. Martin Pinzger</a>. In 2017, I was the vice-chair of the <a href=\"https://ieee.aau.at/\">IEEE Student Branch Austria<a> for the Klagenfurt section.",
-	"news" : "Our paper <b>Semantics-driven extraction of timed automata from Java programs</b> has been accepted by the Empirical Software Engineering journal.",
-	"sub-news" : "<a href=\"./paper/6.html\" class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\">Read More</a>"
+	"news" : "Our paper <b>Automatic Repair of Timestamp Comparisons</b> has been accepted by IEEE Transactions on Software Engineering.",
+	"sub-news" : "<a href=\"./paper/7.html\" class=\"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent\">Read More</a>"
 }
