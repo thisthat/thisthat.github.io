@@ -103,7 +103,12 @@ a.no-link:active {
 	padding-bottom: 0px;
 	padding-top: 0px;
 }
-
+.no-margin-top {
+	margin-top: 0px;
+}
+.no-margin-bottom {
+	margin-bottom: 0px;
+}
 
 .news {
 	font-size: 20px;

@@ -3,6 +3,8 @@
 	"topics" : [
 		{"topic" : "Model Checking and Static Analysis"},
 		{"topic" : "Program Analysis"},
-		{"topic" : "Software Evolution"}
+		{"topic" : "Software Evolution"},
+		{"topic" : "Tracing"},
+		{"topic" : "Protocol Specification"}
 	]
 }
