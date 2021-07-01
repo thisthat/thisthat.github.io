@@ -1,10 +1,14 @@
 {
-	"text" : "My research interests are in:",
-	"topics" : [
-		{"topic" : "Model Checking and Static Analysis"},
-		{"topic" : "Program Analysis"},
-		{"topic" : "Software Evolution"},
-		{"topic" : "Tracing"},
-		{"topic" : "Protocol Specification"}
-	]
+  "text": "My research interests are in:",
+  "topics": [
+    { "topic": "Tracing" },
+    { "topic": "W3C Trace Context", "url": "https://www.w3.org/TR/trace-context/" },
+    { "topic": "OpenTelemetry", "url": "https://opentelemetry.io/" },
+    { "topic": "CI/CD" },
+    { "topic": "Keptn", "url": "https://keptn.sh/" },
+    { "topic": "Protocol Specification" },
+    { "topic": "Program Analysis" },
+    { "topic": "Software Evolution" },
+    { "topic": "Model Checking and Static Analysis" }
+  ]
 }

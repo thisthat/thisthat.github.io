@@ -2,7 +2,12 @@
 	{{text}}
 	<ul>
 		{{#topics}}
+		{{#url}}
+		<li><a href="#">{{topic}}</a></li>
+		{{/url}}
+		{{^url}}
 		<li>{{topic}}</li>
+		{{/url}}
 		{{/topics}}
 	</ul>
 </div>
